@@ -71,7 +71,7 @@ public class MaquinaExpendedoraMejorada {
         else {
             System.out.println("Necesitas introducir " + (precioBillete - balanceClienteActual) + " euros mas!");
                     
-        }            
+        }           
     }
     
     /**
