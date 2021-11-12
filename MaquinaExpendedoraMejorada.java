@@ -64,29 +64,24 @@ public class MaquinaExpendedoraMejorada {
         if (cantidadDeDineroQueFalta > 0 ) {
             System.out.println("Necesitas introducir " + cantidadDeDineroQueFalta + " euros mas!");
         }
-        else if (maquinaPremio == true){
+        else  {
             System.out.println("##################");
             System.out.println("# Billete de tren:");
             System.out.println("# De " + estacionOrigen + " a " + estacionDestino);
             System.out.println("# " + precioBillete + " euros.");
             System.out.println("##################");
-            System.out.println("Tiene un descuento del 10% del coste del billete para compras en El Corte Ingles");         
-            System.out.println(0.1*precioBillete);
+           
             totalDineroAcumulado = totalDineroAcumulado + precioBillete;
             balanceClienteActual = balanceClienteActual - precioBillete;
             numeroBilletesVendidos = numeroBilletesVendidos +1;
         }
+        if (maquinaPremio == true){
+            System.out.println("Tiene un descuento del 10% del coste del billete para compras en El Corte Ingles");         
+            System.out.println(0.1*precioBillete);
+        }
         else {
-            System.out.println("##################");
-            System.out.println("# Billete de tren:");
-            System.out.println("# De " + estacionOrigen + " a " + estacionDestino);
-            System.out.println("# " + precioBillete + " euros.");
-            System.out.println("#################!");
-            System.out.println();         
-            totalDineroAcumulado = totalDineroAcumulado + precioBillete;
-            balanceClienteActual = balanceClienteActual - precioBillete;
-            numeroBilletesVendidos = numeroBilletesVendidos +1;
-        }         
+            System.out.println();
+        }
     }
     
     /**
