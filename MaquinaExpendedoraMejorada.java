@@ -85,8 +85,11 @@ public class MaquinaExpendedoraMejorada {
             balanceClienteActual = balanceClienteActual - precioBillete;
             numeroBilletesVendidos = numeroBilletesVendidos +1;
             if (maquinaPremio == true ){
-            System.out.println("Tiene un descuento del 10% del coste del billete para compras en El Corte Ingles");         
-            System.out.println(0.1*precioBillete);
+                if (numeroBilletesVendidos % 3 == 0){
+                    System.out.println("Tiene un descuento del 10% del coste del billete para compras en El Corte Ingles");         
+                    System.out.println(0.1*precioBillete);
+                }
+                
             }
         }
     }
